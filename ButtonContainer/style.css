@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+}
+.button_grid {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.button_grid button {
+  width: 30%;
+  height: 48px;
+  font-size: 24px;
+}
+#btn5 {
+  cursor: pointer;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
