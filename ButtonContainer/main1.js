@@ -8,7 +8,6 @@ let currentIndex = 0;
 // function to handle middle mouse button click
 
 function handleMiddleButtonClick(event) {
-    console.log("event9", event);
     if(event.button === 0){ // 1 represent the middle mouse button
         // Rotate the labels in the clockwise direction
         currentIndex = (currentIndex + 1) % labels.length;
@@ -20,9 +19,8 @@ function handleMiddleButtonClick(event) {
 
 // Function to update the labels
 function updateButtonLabels() {
-    
     const rotatedLabels = [...labels.slice(currentIndex), ...labels.slice(0,currentIndex)]; 
-    console.log("currentIndex", rotatedLabels, ...labels.slice(currentIndex), ...labels.slice(0,currentIndex));
+   
     const buttons = document.querySelectorAll('.button_grid button');
 
     buttons.forEach((button, index)=>{
